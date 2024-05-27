@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування</title>
+</head>
+<body>
+    <h2>Опитування</h2>
+    <form id="surveyForm">
+        <label for="uni">В якому університеті Ви навчаєтесь?</label><br>
+        <select id="uni" name="uni">
+            <option value="LNU">ЛНУ</option>
+            <option value="NULP">НУЛП</option>
+            <option value="UKU">УКУ</option>
+            <option value="other">Інший</option>
+            
+        </select><br><br>
+
+        <label>Виберіть курс на якому ви навчаєтесь:</label><br>
+        <input type="radio" id="1year" name="stream" value="1year">
+        <label for="1year">1 курс</label><br>
+        <input type="radio" id="2year" name="stream" value="2year">
+        <label for="1year">2 курс</label><br>
+        <input type="radio" id="3year" name="stream" value="3year">
+        <label for="1year">3 курс</label><br>
+        <input type="radio" id="4year" name="stream" value="4year">
+        <label for="1year">4 курс</label><br>
+        <input type="radio" id="5year" name="stream" value="5year">
+        <label for="1year">5 курс</label><br>
+        <input type="radio" id="6year" name="stream" value="6year">
+        <label for="1year">6 курс</label><br>
+
+        <label>Вкажіть групу:</label><br>
+        <input type="checkbox" id="group1" name="group" value="group1">
+        <label for="group1">Група 1</label><br>
+        <input type="checkbox" id="group2" name="group" value="group2">
+        <label for="group2">Група 2</label><br><br>
+
+        <label for="interviewTime">Виберіть зручний час для проходження співбесіди:</label><br>
+        <input type="datetime-local" id="interviewTime" name="interviewTime"><br><br>
+
+        <label for="averageGrade">Вкажіть середній бал:</label><br>
+        <input type="number" id="averageGrade" name="averageGrade" min="0" max="100"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
